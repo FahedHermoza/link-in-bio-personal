@@ -1,0 +1,6 @@
+{
+  "name": "Fahed Hermoza - Tarjeta NFC & QR",
+  "description": "Tarjeta digital personal interactiva NFC y QR de Fahed Hermoza con redes sociales, portafolio y descarga de contacto vCard.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
