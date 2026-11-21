@@ -70,10 +70,10 @@ export function SocialButton({ link, index }: SocialButtonProps) {
       target={link.isExternal ? '_blank' : undefined}
       rel={link.isExternal ? 'noopener noreferrer' : undefined}
       style={{ backgroundColor: link.bgColor }}
-      className="group relative flex items-center justify-between w-full h-[52px] px-5 rounded-xl text-white font-extrabold text-[11.5px] sm:text-[12px] tracking-[0.18em] transition-all duration-200 shadow-[0_2px_8px_rgba(108,114,234,0.16)] hover:shadow-[0_8px_20px_rgba(108,114,234,0.28)] hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.99] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#6876F0] overflow-hidden"
+      className="group relative flex items-center justify-between w-full h-[56px] px-5 rounded-2xl text-white font-extrabold text-[11.5px] sm:text-[12px] tracking-[0.14em] transition-all duration-200 shadow-[0_5px_12px_rgba(108,114,234,0.14)] hover:shadow-[0_10px_22px_rgba(108,114,234,0.24)] hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.99] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#585CE5] overflow-hidden"
     >
       {/* Subtle shine hover effect */}
-      <span className="absolute inset-0 w-full h-full bg-white/0 group-hover:bg-white/8 transition-colors duration-200 pointer-events-none" />
+      <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-white/15 via-transparent to-black/10 pointer-events-none" />
 
       {/* Button label on the left */}
       <span className="relative z-10 font-extrabold uppercase select-none drop-shadow-sm">
@@ -81,7 +81,7 @@ export function SocialButton({ link, index }: SocialButtonProps) {
       </span>
 
       {/* Brand icon on the right */}
-      <span className="relative z-10 flex items-center justify-center transition-transform duration-200 group-hover:scale-110">
+      <span className="relative z-10 flex h-9 w-9 items-center justify-center rounded-xl bg-white/15 ring-1 ring-white/20 transition-transform duration-200 group-hover:scale-110">
         {renderIcon(link.iconName)}
       </span>
     </a>
